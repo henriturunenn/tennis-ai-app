@@ -1,0 +1,37 @@
+# 🎾 AI Tennis Companion
+
+This is a **Streamlit app** that fetches **live tennis match stats** and generates **AI match summaries** using OpenAI GPT-4.
+
+## Features
+
+- View live tennis matches (players, scores, stats)  
+- Generate short, fan-friendly match summaries using AI  
+- Interactive dropdown to select matches  
+
+## Setup Instructions
+
+1. **Fork this repository** to your GitHub account.
+
+2. **Add your API keys in Streamlit Secrets**:
+   
+[rapidapi]
+key="YOUR_RAPIDAPI_KEY"
+
+[openai]
+key="YOUR_OPENAI_KEY"
+
+> Replace `YOUR_RAPIDAPI_KEY` with the key from your RapidAPI tennis API.  
+> Replace `YOUR_OPENAI_KEY` with your OpenAI API key.
+
+3. **Deploy on Streamlit Cloud**:
+
+- Go to [Streamlit Cloud](https://streamlit.io/cloud)  
+- Click **New App → From GitHub**  
+- Select your repo and set `app.py` as the main file  
+- Streamlit will automatically install dependencies from `requirements.txt`  
+- Click **Deploy** → your public AI Tennis Companion app is live!  
+
+## Notes
+
+- The app fetches **live matches only**, so if no matches are currently running, the dropdown may be empty.  
+- For testing anytime, you can also fetch the latest finished match instead of live matches.  
